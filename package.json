@@ -1,0 +1,35 @@
+{
+  "name": "widget-plugin",
+  "version": "1.0.0",
+  "description": "eCommerce Product React Component Widget Plugin",
+  "main": "server.js",
+  "scripts": {
+    "serve": "nodemon server.js",
+    "watch": "watchify ./src/widget.js -o ./build/demo.js -v",
+    "build": "browserify ./src/widget.js -o ./build/demo.js",
+    "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raincrystal/easysize-react.git"
+  },
+  "keywords": [
+    "easysize"
+  ],
+  "author": "Dmitry Musatov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raincrystal/easysize-react/issues"
+  },
+  "homepage": "https://github.com/raincrystal/easysize-react#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "nodemon": "^2.0.6",
+    "watchify": "^3.11.1"
+  }
+}
