@@ -7,7 +7,7 @@ module.exports = {
         color: '#5E6977',
         cursor: 'pointer',
         transition: 'all .5s',
-        background: '#FFFFFF',
+        background: '#FFFFFF'
     },
     modalButton: {
         position: 'absolute',
@@ -21,6 +21,6 @@ module.exports = {
     title: {
         width: '100%',
         height: 'fit-content',
-        textAlign: 'center',
+        textAlign: 'center'
     }
 }
