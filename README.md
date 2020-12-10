@@ -1,4 +1,4 @@
-# Ramdom attribute selector
+# Random attribute selector
 
 ### Run on local
  - `npm install`

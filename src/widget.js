@@ -52,7 +52,7 @@ const Widget = (props) => {
 
   // Handle modal button click
   const handleClickRndBtn = () => {
-    // If randome attribute was slected emit event and close modal, else select random attribute
+    // If random attribute was slected emit event and close modal, else select random attribute
     if (afterRandomSelect) {
       select_attribute(randomAttribute);
       handleOpenModal(false);
@@ -120,6 +120,7 @@ class WidgetController {
     this.config = config;
   }
 
+  // Initialize random attribute select widget
   start() {
     // Placeholder element from configuration
     const placeholder = document.querySelector(this.config.placeholder);
