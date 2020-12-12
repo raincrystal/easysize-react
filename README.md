@@ -9,8 +9,13 @@
 ### Configuration example
 
 ```js
+  // Add script
+  <body>
+    <script src="http://127.0.0.1:3355/demo.js" charset="utf-8"></script>
+  </body>
+
   // Widget configuration
-  let configuration = {
+  const configuration = {
     attributes: ['red', 'blue', 'black'],
     placeholder: '.product-color',
     placeholder_text: 'Surprise me with the color',
@@ -19,9 +24,8 @@
     select_attribute: function(color) {
       $('#' + color).click();
     }
-  }
+  };
 
-  const WidgetController =  window.WidgetController;
   const widget = new WidgetController(configuration);
   
   setTimeout(widget.start(), 2000);

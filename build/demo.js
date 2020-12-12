@@ -8,7 +8,7 @@
 
 (function () {
 	'use strict';
- 
+
 	var canUseDOM = !!(
 		typeof window !== 'undefined' &&
 		window.document &&
@@ -33235,7 +33235,7 @@ var Widget = function Widget(props) {
 
 
   var handleClickRndBtn = function handleClickRndBtn() {
-    // If randome attribute was slected emit event and close modal, else select random attribute
+    // If random attribute was slected emit event and close modal, else select random attribute
     if (afterRandomSelect) {
       select_attribute(randomAttribute);
       handleOpenModal(false);
@@ -33301,7 +33301,8 @@ var WidgetController = /*#__PURE__*/function () {
     _classCallCheck(this, WidgetController);
 
     this.config = config;
-  }
+  } // Initialize random attribute select widget
+
 
   _createClass(WidgetController, [{
     key: "start",
