@@ -115,15 +115,11 @@ const Widget = (props) => {
 }
 
 
-class WidgetController {
-  constructor(config) {
-    this.config = config;
-  }
-
+const WidgetController = (config) => ({
   // Initialize random attribute select widget
-  start() {
+  start: () => {
     // Placeholder element from configuration
-    const placeholder = document.querySelector(this.config.placeholder);
+    const placeholder = document.querySelector(config.placeholder);
 
     // Create dom container
     const domContainer = document.createElement("div");
@@ -138,9 +134,9 @@ class WidgetController {
     placeholder.appendChild(domContainer);
 
     // Render Widget component
-    ReactDOM.render(<Widget {...this.config} />, domContainer);
+    ReactDOM.render(<Widget {...config} />, domContainer);
   }
-}
+})
 
 // Set WidgetController as a global variable
 window.WidgetController = WidgetController;

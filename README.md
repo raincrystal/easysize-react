@@ -26,9 +26,6 @@
     }
   };
 
-  const widget = new WidgetController(configuration);
-  
-  setTimeout(() => {
-    widget.start();
-  }, 2000);
+  const widget = WidgetController(configuration);
+  setTimeout(widget.start, 2000);
 ```
